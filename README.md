@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hao's Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .left-column {
+            flex: 0 0 300px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .right-column {
+            flex: 1;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 1.2em;
+            color: #7f8c8d;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+
+        .contact-info li {
+            margin: 10px 0;
+            color: #34495e;
+        }
+
+        .section-title {
+            font-size: 1.5em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+
+        .experience-item, .project-item {
+            margin-bottom: 25px;
+        }
+
+        .experience-time, .project-time {
+            font-size: 0.9em;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+
+        .experience-position, .project-name {
+            font-size: 1.1em;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+
+        .experience-desc, .project-desc {
+            color: #34495e;
+            line-height: 1.6;
+        }
+
+        .skill-list {
+            display: grid;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .header-2 {
+            display: grid;
+            gap: 15px;
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        .sub-item {
+            display: grid;
+            gap: 15px;
+            list-style: none;
+        }
+
+        .skill-item {
+            background-color: #f8f9fa;
+            padding: 8px 12px;
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: #2c3e50;
+        }
+
+        /* 响应式布局 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .left-column, .right-column {
+                flex: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 左侧个人信息栏 -->
+        <div class="left-column">
+            <img src="HIKING.jpg" alt="Hao Huang's Photo" class="profile-img">
+            <h1 class="name">Hao Huang</h1>
+            <p class="title"> <a class="tag" href="https://www.hkust.edu.hk/" target="_blank">The Hong Kong University of Science and Technology </a>
+            <ul class="contact-info">
+                <li>Clear Water Bay, Kowloon, Hong Kong 999077</li>
+                <li>Phone: (852)8490 8009 </li>
+                <li>email: <a class="tag" href="mailto:haohuang0527@gmail.com" target="_blank">haohuang0527@gmail.com </a>
+            </ul>
+        </div>
+
+        <!-- 右侧内容栏 -->
+        <div class="right-column">
+          <div class="header-2">
+          <p class='header-2'>Hi!</p>
+          <p>I am an undergraduate student majoring in <a class="tag" href="https://cse.hkust.edu.hk/" target="_blank">Computer Science and Engineering at The Hong Kong University of
+          Science and Technology. </a>
+          <p>My interests lie in the development of computer vision. I worked on a research project focused on integrating BLIP (Bootstrapped Language-Image Pre-training) and Noice
+           Collage within the Stable Diffusion framework to enhance AI-driven image generation. This involves experimenting with BLIP to improve text-to-image alignment by leveraging 
+           its advanced semantic understanding capabilities, while simultaneously utilizing Noice Collage to curate and blend visual elements for dynamic compositions. I have been 
+           fine-tuning Stable Diffusion models to test the synergy between these tools and analyzing the generated outputs. Additionally, I am proficient in techniques such as prompt
+           engineering, model fine-tuning, latent space exploration, and blending methods to optimize image quality. Furthermore, I am comfortable using Python-based libraries such as
+           PyTorch and Hugging Face, alongside tools like CLIP and BLIP for model integration and performance evaluation.</p>
+         <p>    </p>
+          </div>
+            <!-- 教育背景 -->
+            <h2 class="section-title">Education</h2>
+            <div class="experience-item">
+                <div class="experience-time">Sept. 2022 - Present</div>
+                <h3>The Hong Kong University of Science and Technology</h3>
+                <p>Major: Computer Science and Engineering with an Extended Major in Artificial Intelligence</p>
+                <p>Key Courses: Deep Learning, Data Structures Analysis, Algorithm Design, Relational Database, Operating System</p>
+            </div>
+
+            <!-- 技术能力 -->
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="experience-item">
+                <li>Computer Languages: Python, JavaScript, SQL, Bash, C/C++, MATLAB</li>
+                <div class="sub-item">
+                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C++: Proficient in C++, equipped with advanced skills such as efficient memory management, template metaprogramming, and object - oriented design patterns etc.</span>
+                </div>
+                <div class="sub-item">
+                     <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Python: Proficient in Python, master several models like OpenCV and Pillow of editing images</span>
+                </div>
+                <li>Libraries & Tools: PyTorch, Jax, Numpy, Scikit</li>
+                <li>Language: Fluent in Mandarin and English, both in written and spoken forms</li>
+            </div>
+
+            <!-- 项目经历 -->
+            <h2 class="section-title">Projects</h2>
+            <div class="project-item">
+                <h3>RAGEN: Reinforcement Learning for Reasoning-Able Language Models</h3>
+                <div class="project-time">Mar/2025 – Present</div>
+                <ul class="project-desc">
+                    <li>Formulate agent-environment interactions as Markov Decision Processes (MDPs) to enable sequential decision-making and reasoning over dynamic environments.</li>
+                    <li>Implement the Reason-Interaction Chain Optimization (RICO) algorithm to jointly optimize reasoning and action strategies, enhancing the LLM's performance across multi-turn interactions.</li>
+                    <li>Develop progressive reward normalization strategies (ARPO, BRPO, GRPO) to stabilize training and improve learning efficiency in diverse, complex environments.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Integrating BLIP and Noise Collage within the Stable Diffusion framework</h3>
+                <div class="project-time">Sept/2024 – Feb/2025</div>
+                <ul class="project-desc">
+                    <li>Leveraged BLIP's advanced semantic understanding capabilities to enhance text-to-image alignment, significantly improving the quality of generated images based on textual descriptions.</li>
+                    <li>Employed Noise Collage techniques to curate and blend visual elements, creating dynamic and diverse image compositions, thereby expanding the creative potential of the Stable Diffusion model.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Investigating machine learning methods of ReactionOOD</h3>
+                <div class="project-time">Jun/2024 -- Aug/2024</div>
+                <ul class="project-desc">
+                    <li>Analyzed GOOD dataset and implemented Chemprop model.</li>
+                    <li>Evaluated atom-to-atom mapping accuracy.</li>
+                    <li>Collaborated with peers and mentors to explore reaction mechanisms and atom-to-atom mapping techniques.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Analyzing Dynamic Volatility Spillover between Chinese Carbon and International Energy Markets from Climate Shocks</h3>
+                <div class="project-time">Jun/2023 - Aug/2023</div>
+                <ul class="project-desc">
+                    <li>Applied econometric models to analyze the complex relationships between the Chinese carbon market and international energy markets under the impact of climate shocks.</li>
+                    <li>Optimized process, prepared input data for rigorous model testing and drew results from the model.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>Robot Master Competition</h3>
+                <div class="project-time">Feb/2023 - Apr/2023</div>
+                <ul class="project-desc">
+                    <li>Responsible for the mechanical design of two robots and self-studied SolidWorks.</li>
+                    <li>Worked closely with team members in all aspects of the project, which enhanced my teamwork skills.</li>
+                </ul>
+            </div>
+
+            <!-- 工作经历 -->
+            <h2 class="section-title">Working Experience</h2>
+            <div class="experience-item">
+                <h3>Guangzhou Xiaochuang Intelligent Technology Co., Ltd</h3>
+                <div class="experience-time">Dec. 2024 – Feb. 2025</div>
+                <p class="experience-position">RD Intern: Paper Method Restructuring</p>
+                <ul class="experience-desc">
+                    <li>Focused on paper method restructuring proposed in cutting-edge academic papers.</li>
+                    <li>Sorted out the core ideas and key steps from cutting-edge academic papers.</li>
+                    <li>Used Python and PyTorch to implement the algorithmic details in the papers based on open-source code libraries on Github.</li>
+                    <li>Evaluated the performance of the reproduced model and conducted a comparative analysis with the results claimed in the papers.</li>
+                </ul>
+            </div>
+
+            <!-- 荣誉 -->
+            <h2 class="section-title">Honour</h2>
+            <ul class="project-desc">
+                <li>Honors: Dean's List for the School of Engineering (2023)</li>
+                <li>Second prize of Guangdong Province in the 37th Chinese Mathematical Olympiad （2021）</li>
+                <li>Second prize of Guangdong Province in the 37th Chinese Physics Olympiad	(2020)</li>
+            </ul>
+
+        </div>
+    </div>
+</body>
+</html>
